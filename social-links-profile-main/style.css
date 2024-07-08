@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 400px;
+    height: 700px;
+    border: 2px solid hsl(0, 0%, 12%);
+
+}
+
+.jess{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 20px;
+}
+
+.jess h1{
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    align-self: center;
+    margin: 5px;
+}
+
+.jess h2{
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color:  hsl(75, 94%, 57%);
+    align-self: center;
+    margin: 5px;
+}
+
+.jess img{
+    border-radius: 50%;
+    align-self: center;
+    margin: 10px;
+}
+
+.read{
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    margin: 15px;
+
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.list span{
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    background: hsl(0, 0%, 20%);
+}
+
+.list span:hover{
+    background:  hsl(75, 94%, 57%);
+    color: black;
+    cursor: pointer;
+}
+
+@media(max-width: 425px){
+    .container{
+        width: 300px;
+        height: 550px;
+    }
+
+    .jess{
+        margin: 10px;
+    }
+
+    .jess h1{
+        font-size: 1rem;
+    }
+
+    .jess h2{
+        font-size: .7rem;
+    }
+
+    .read{
+        font-size: .7rem;
+    }
+
+    .list span{
+        width: 250px;
+        height: 40px;
+        font-size: .7rem;
+    }
+
+}
